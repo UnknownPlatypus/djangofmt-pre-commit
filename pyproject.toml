@@ -1,0 +1,6 @@
+[project]
+name = "djangofmt-pre-commit"
+version = "0.0.0"
+dependencies = [
+    "djangofmt==0.0.0",
+]

@@ -1,0 +1,9 @@
+- id: djangofmt
+  name: Djangofmt
+  description: "A fast, HTML aware, Django template formatter, written in Rust"
+  entry: djangofmt
+  language: python
+  files: '(^|/)templates/'
+  types_or: [text]
+  exclude_types: [python]
+  minimum_pre_commit_version: 2.9.2
