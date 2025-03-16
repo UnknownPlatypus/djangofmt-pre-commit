@@ -12,7 +12,7 @@ Add the following to your `.pre-commit-config.yaml`:
 ```yaml
 repos:
 - repo: https://github.com/UnknownPlatypus/djangofmt-pre-commit
-  rev: v0.0.0
+  rev: v0.1.0
   hooks:
     - id: djangofmt
 ```
