@@ -38,7 +38,7 @@ def main():
         paths = update_version_in_files(version)
 
         subprocess.run(["git", "add", *paths], check=True)
-        subprocess.run(["git", "commit", "-m", f"Djangofmt {version}"], check=True)
+        subprocess.run(["git", "commit", "-m", f"Djangofmt {tag_name}"], check=True)
 
         subprocess.run(["git", "tag", tag_name], check=True)
         subprocess.run(
@@ -53,7 +53,7 @@ def main():
             "--title",
             tag_name,
             "--notes",
-            f"See: https://github.com/UnknownPlatypus/djangofmt/releases/tag/{version}",
+            f"See: https://github.com/UnknownPlatypus/djangofmt/releases/tag/{tag_name}",
             "--verify-tag",
         ]
         if i == len(versions) - 1:
