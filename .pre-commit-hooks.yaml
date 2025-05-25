@@ -6,4 +6,4 @@
   files: '(^|/)templates/'
   types_or: [text]
   exclude_types: [python]
-  minimum_pre_commit_version: 2.9.2
+  minimum_pre_commit_version: 2.9
