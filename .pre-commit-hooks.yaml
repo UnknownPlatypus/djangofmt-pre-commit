@@ -15,3 +15,12 @@
   types: [svg]
   require_serial: true
   minimum_pre_commit_version: "2.9"
+
+- id: djangofmt-check
+  name: Djangofmt Check
+  description: "Lint Django templates with djangofmt, a fast HTML aware linter written in Rust"
+  entry: djangofmt check
+  language: python
+  types_or: [html, jinja]
+  require_serial: true
+  minimum_pre_commit_version: "2.9"
