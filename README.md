@@ -16,3 +16,16 @@ repos:
   hooks:
     - id: djangofmt
 ```
+
+To also lint your templates, add the `djangofmt-check` hook:
+
+```yaml
+repos:
+- repo: https://github.com/UnknownPlatypus/djangofmt-pre-commit
+  rev: v0.2.8
+  hooks:
+    - id: djangofmt
+    - id: djangofmt-check
+```
+
+Pass `args: [--fix]` to `djangofmt-check` to apply safe fixes automatically.
