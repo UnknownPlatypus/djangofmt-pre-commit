@@ -2,5 +2,5 @@
 name = "djangofmt-pre-commit"
 version = "0.0.0"
 dependencies = [
-    "djangofmt==0.2.9",
+    "djangofmt==0.2.10",
 ]

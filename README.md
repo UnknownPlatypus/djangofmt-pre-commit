@@ -12,7 +12,7 @@ Add the following to your `.pre-commit-config.yaml`:
 ```yaml
 repos:
 - repo: https://github.com/UnknownPlatypus/djangofmt-pre-commit
-  rev: v0.2.9
+  rev: v0.2.10
   hooks:
     - id: djangofmt
 ```
@@ -22,7 +22,7 @@ To also lint your templates, add the `djangofmt-check` hook:
 ```yaml
 repos:
 - repo: https://github.com/UnknownPlatypus/djangofmt-pre-commit
-  rev: v0.2.9
+  rev: v0.2.10
   hooks:
     - id: djangofmt
     - id: djangofmt-check
