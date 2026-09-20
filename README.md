@@ -20,12 +20,15 @@ repos:
 To also lint your templates, add the `djangofmt-check` hook:
 
 ```yaml
-repos:
 - repo: https://github.com/UnknownPlatypus/djangofmt-pre-commit
+  # Djangofmt version.
   rev: v1.0.0
   hooks:
-    - id: djangofmt
+    # Run the linter.
     - id: djangofmt-check
+      args: [--fix]
+    # Run the formatter.
+    - id: djangofmt
 ```
 
 Pass `args: [--fix]` to `djangofmt-check` to apply safe fixes automatically.
